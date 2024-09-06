@@ -1,0 +1,590 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#">
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_P_TYPE_2385f3f2d290e643263e483c621b6c09">
+    <j.0:hasAConditionalExpression>WHERE  = 'ECONOMY ANODIZED STEEL' &#xD;
+</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_P_TYPE_2385f3f2d290e643263e483c621b6c09</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+  </j.0:PartialIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_S_NATIONKEY_S_SUPPKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.5</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_S_NATIONKEY_S_SUPPKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_NATIONKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_SUPPKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_NATIONKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_SUPPKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#NATION_N_REGIONKEY_FKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_P_TYPE_P_PARTKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_P_TYPE_P_PARTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_PARTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_PARTKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_SHIPDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.4</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_SHIPDATE</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_1"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_SUPPKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.4</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_SUPPKEY</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_SHIPDATE_L_ORDERKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_SHIPDATE_L_ORDERKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_L_SHIPDATE_a2fcaf3b062a54174ad04afcc8eba314">
+    <j.0:hasAConditionalExpression>WHERE  &lt;= DATE'1998-12-01'-INTERVAL'87_DAYS'&#xD;
+</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_L_SHIPDATE_a2fcaf3b062a54174ad04afcc8eba314</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_1"/>
+  </j.0:PartialIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#SUPPLIER_PKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_O_ORDERDATE_d412e551df2b900e5d28bf68b743188b">
+    <j.0:hasAConditionalExpression>WHERE  &lt; DATE '1994-01-01' + INTERVAL '1' YEAR &#xD;
+</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_O_ORDERDATE_d412e551df2b900e5d28bf68b743188b</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:PartialIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_ORDERKEY_L_SUPPKEY">
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:hasHypotheticalIndexName>HYP_L_ORDERKEY_L_SUPPKEY</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.4</j.0:hasHypBonus>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_ORDERDATE_O_ORDERKEY">
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hasHypotheticalIndexName>HYP_O_ORDERDATE_O_ORDERKEY</j.0:hasHypotheticalIndexName>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_ORDERKEY_O_CUSTKEY">
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.75</j.0:hasHypBonus>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hasHypotheticalIndexName>HYP_O_ORDERKEY_O_CUSTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_RECEIPTDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_RECEIPTDATE</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_ORDERKEY_L_SHIPDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_ORDERKEY_L_SHIPDATE</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_O_ORDERDATE_f0e4489e667d638b9719d69404779e3c">
+    <j.0:hasAConditionalExpression>WHERE  &lt; DATE '1993-07-01' + INTERVAL '3' MONTH</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_O_ORDERDATE_f0e4489e667d638b9719d69404779e3c</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+  </j.0:PartialIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_C_CUSTKEY_C_MKTSEGMENT">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.333333333333333333333333</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_C_CUSTKEY_C_MKTSEGMENT</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_SUPPKEY_L_PARTKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_SUPPKEY_L_PARTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_O_ORDERDATE_05e0c9b5d620371ae409d98b1747c9b3">
+    <j.0:hasAConditionalExpression>WHERE  &gt;= DATE '1994-01-01'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_O_ORDERDATE_05e0c9b5d620371ae409d98b1747c9b3</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:PartialIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_COMMITDATE_L_ORDERKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_COMMITDATE_L_ORDERKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_COMMITDATE_L_RECEIPTDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_COMMITDATE_L_RECEIPTDATE</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_ORDERKEY_L_COMMITDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_ORDERKEY_L_COMMITDATE</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#CUSTOMER_C_NATIONKEY_FKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.666666666666666666666666</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_COMMITDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_COMMITDATE</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_RECEIPTDATE_L_ORDERKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_RECEIPTDATE_L_ORDERKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_PARTKEY_L_ORDERKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_PARTKEY_L_ORDERKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_SUPPKEY_L_ORDERKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.4</j.0:hasHypBonus>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hasHypotheticalIndexName>HYP_L_SUPPKEY_L_ORDERKEY</j.0:hasHypotheticalIndexName>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SUPPKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#ORDERS_O_CUSTKEY_FKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.75</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_R_REGIONKEY_R_NAME">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_REGIONKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_REGIONKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:hasHypotheticalIndexName>HYP_R_REGIONKEY_R_NAME</j.0:hasHypotheticalIndexName>
+  </j.0:HypotheticalIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_O_ORDERDATE_8fe5882f28bf93082daf980dcb054def">
+    <j.0:hasAConditionalExpression>WHERE  BETWEEN DATE '1995-01-01'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_O_ORDERDATE_8fe5882f28bf93082daf980dcb054def</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+  </j.0:PartialIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#SUPPLIER_S_NATIONKEY_FKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.5</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_C_MKTSEGMENT">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.333333333333333333333333</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_C_MKTSEGMENT</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_R_NAME">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_R_NAME</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#CUSTOMER_PKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_C_NATIONKEY_C_CUSTKEY">
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_NATIONKEY"/>
+    <j.0:hasHypotheticalIndexName>HYP_C_NATIONKEY_C_CUSTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.666666666666666666666666</j.0:hasHypBonus>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_NATIONKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_P_PARTKEY_P_TYPE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_P_PARTKEY_P_TYPE</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_PARTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_PARTKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_ORDERDATE">
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hasHypotheticalIndexName>HYP_O_ORDERDATE</j.0:hasHypotheticalIndexName>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_ORDERDATE_O_CUSTKEY">
+    <j.0:hasHypotheticalIndexName>HYP_O_ORDERDATE_O_CUSTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.75</j.0:hasHypBonus>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PART_PKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_N_NATIONKEY_N_REGIONKEY">
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_NATIONKEY"/>
+    <j.0:hasHypotheticalIndexName>HYP_N_NATIONKEY_N_REGIONKEY</j.0:hasHypotheticalIndexName>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_REGIONKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_NATIONKEY"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_REGIONKEY"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#NATION_PKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_C_MKTSEGMENT_C_CUSTKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.333333333333333333333333</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_C_MKTSEGMENT_C_CUSTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_CUSTKEY_O_ORDERKEY">
+    <j.0:hasHypotheticalIndexName>HYP_O_CUSTKEY_O_ORDERKEY</j.0:hasHypotheticalIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.75</j.0:hasHypBonus>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_ORDERKEY_O_ORDERDATE">
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:hasHypotheticalIndexName>HYP_O_ORDERKEY_O_ORDERDATE</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_S_SUPPKEY_S_NATIONKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.5</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_S_SUPPKEY_S_NATIONKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_SUPPKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_NATIONKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_SUPPKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_S_NATIONKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_O_ORDERDATE_5ed359b830f647fe43352c7d37a017c1">
+    <j.0:hasAConditionalExpression>WHERE  &gt;= DATE '1993-07-01'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_O_ORDERDATE_5ed359b830f647fe43352c7d37a017c1</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+  </j.0:PartialIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_R_NAME_R_REGIONKEY">
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_REGIONKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_REGIONKEY"/>
+    <j.0:hasHypotheticalIndexName>HYP_R_NAME_R_REGIONKEY</j.0:hasHypotheticalIndexName>
+  </j.0:HypotheticalIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_O_ORDERDATE_6a444fbfe2ef5dee0a8b9b5accf2e8c5">
+    <j.0:hasAConditionalExpression>WHERE  &lt; DATE '1995-03-15'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_O_ORDERDATE_6a444fbfe2ef5dee0a8b9b5accf2e8c5</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+  </j.0:PartialIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_R_NAME_5108816bf38bba3a814d3c58562e1c80">
+    <j.0:hasAConditionalExpression>WHERE  = 'AMERICA'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_R_NAME_5108816bf38bba3a814d3c58562e1c80</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+  </j.0:PartialIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_ORDERKEY_L_RECEIPTDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_ORDERKEY_L_RECEIPTDATE</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_N_REGIONKEY_N_NATIONKEY">
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_NATIONKEY"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_NATIONKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_REGIONKEY"/>
+    <j.0:hasHypotheticalIndexName>HYP_N_REGIONKEY_N_NATIONKEY</j.0:hasHypotheticalIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_N_REGIONKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#REGION_PKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_L_SHIPDATE_a85c7be4a21f487f0188cedaf50f1e6a">
+    <j.0:hasAConditionalExpression>WHERE  &gt; DATE '1995-03-15' &#xD;
+</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_L_SHIPDATE_a85c7be4a21f487f0188cedaf50f1e6a</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_SHIPDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+  </j.0:PartialIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_C_MKTSEGMENT_ec940310e2025d61bae1c6ef4d7b3738">
+    <j.0:hasAConditionalExpression>WHERE  = 'BUILDING'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_C_MKTSEGMENT_ec940310e2025d61bae1c6ef4d7b3738</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_MKTSEGMENT"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+  </j.0:PartialIndex>
+  <j.0:PartialIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#PARTIAL_R_NAME_3aee8c1b924cf97cdec3023eb7f629f7">
+    <j.0:hasAConditionalExpression>WHERE  = 'ASIA'</j.0:hasAConditionalExpression>
+    <j.0:hasIndexName>PARTIAL_R_NAME_3aee8c1b924cf97cdec3023eb7f629f7</j.0:hasIndexName>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_R_NAME"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleSimplePartialIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:PartialIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#ORDERS_PKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_RECEIPTDATE_L_COMMITDATE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_RECEIPTDATE_L_COMMITDATE</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_4"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_RECEIPTDATE"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_COMMITDATE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_O_CUSTKEY_O_ORDERDATE">
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_3"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+    <j.0:hasHypotheticalIndexName>HYP_O_CUSTKEY_O_ORDERDATE</j.0:hasHypotheticalIndexName>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_ORDERDATE"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.75</j.0:hasHypBonus>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_O_CUSTKEY"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_PARTKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_PARTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_C_CUSTKEY_C_NATIONKEY">
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_NATIONKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_NATIONKEY"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_C_CUSTKEY"/>
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.666666666666666666666666</j.0:hasHypBonus>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+    <j.0:hasHypotheticalIndexName>HYP_C_CUSTKEY_C_NATIONKEY</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_5"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_L_ORDERKEY_L_PARTKEY">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_L_ORDERKEY_L_PARTKEY</j.0:hasHypotheticalIndexName>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_ORDERKEY"/>
+    <j.0:SecondColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_L_PARTKEY"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypCompositeIndex"/>
+  </j.0:HypotheticalIndex>
+  <j.0:HypotheticalIndex rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#HYP_P_TYPE">
+    <j.0:hasHypBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1.0</j.0:hasHypBonus>
+    <j.0:hasHypotheticalIndexName>HYP_P_TYPE</j.0:hasHypotheticalIndexName>
+    <j.0:originatesIndSpec rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DML_TPCH_8"/>
+    <j.0:hypIndexesColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:FirstColumn rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#Column_P_TYPE"/>
+    <j.0:isGeneratedBy rdf:resource="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#RuleHypSimpleIndex"/>
+  </j.0:HypotheticalIndex>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#LINEITEM_L_ORDERKEY_FKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.8</j.0:hasIndexUsefulness>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ana/ontologies/2016/4/tuning#LINEITEM_L_PARTKEY_FKEY">
+    <j.0:hasIndexUsefulness rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >0.2</j.0:hasIndexUsefulness>
+  </rdf:Description>
+</rdf:RDF>

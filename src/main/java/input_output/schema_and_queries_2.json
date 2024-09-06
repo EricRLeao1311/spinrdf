@@ -1,0 +1,74 @@
+{
+    "tables": [
+      {
+        "columns": [
+          "Column_P_PARTKEY",
+          "Column_P_NAME",
+          "Column_P_MFGR",
+          "Column_P_TYPE",
+          "Column_P_RETAILPRICE"
+        ],
+        "name": "part",
+        "id": "Table_PART"
+      },
+      {
+        "columns": [
+          "Column_S_SUPPKEY",
+          "Column_S_NAME",
+          "Column_S_NATIONKEY",
+          "Column_S_ACCTBAL"
+        ],
+        "name": "supplier",
+        "id": "Table_SUPPLIER"
+      }
+    ],
+    "columns": [
+      {
+        "name": "p_partkey",
+        "id": "Column_P_PARTKEY"
+      },
+      {
+        "name": "p_name",
+        "id": "Column_P_NAME"
+      },
+      {
+        "name": "p_mfgr",
+        "id": "Column_P_MFGR"
+      },
+      {
+        "name": "p_type",
+        "id": "Column_P_TYPE"
+      },
+      {
+        "name": "p_retailprice",
+        "id": "Column_P_RETAILPRICE"
+      },
+      {
+        "name": "s_suppkey",
+        "id": "Column_S_SUPPKEY"
+      },
+      {
+        "name": "s_name",
+        "id": "Column_S_NAME"
+      },
+      {
+        "name": "s_nationkey",
+        "id": "Column_S_NATIONKEY"
+      },
+      {
+        "name": "s_acctbal",
+        "id": "Column_S_ACCTBAL"
+      }
+    ],
+    "dmlStatements": [
+      {
+        "query": "SELECT p_partkey, p_name, p_mfgr, p_type, p_retailprice FROM part WHERE p_type LIKE '%BRASS%'",
+        "id": "DML_TPCH_1"
+      },
+      {
+        "query": "SELECT s_name, s_acctbal FROM supplier WHERE s_nationkey = 3",
+        "id": "DML_TPCH_2"
+      }
+    ]
+  }
+  
