@@ -1,1 +1,550 @@
-[]
+[
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_L_SUPPKEY_L_PARTKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_SUPPKEY_L_PARTKEY",
+    "command": "CREATE INDEX HYP_L_SUPPKEY_L_PARTKEY ON lineitem(Column_L_PARTKEY, Column_L_SUPPKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3",
+      "DML_TPCH_1"
+    ],
+    "indexName": "HYP_L_SHIPDATE",
+    "bonus": "0.4",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_L_SHIPDATE",
+    "command": "CREATE INDEX HYP_L_SHIPDATE ON lineitem(Column_L_SHIPDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_P_TYPE",
+    "bonus": "1.0",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_P_TYPE",
+    "command": "CREATE INDEX HYP_P_TYPE ON part(Column_P_TYPE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "indexName": "HYP_C_CUSTKEY_C_MKTSEGMENT",
+    "bonus": "0.333333333333333333333333",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_C_CUSTKEY_C_MKTSEGMENT",
+    "command": "CREATE INDEX HYP_C_CUSTKEY_C_MKTSEGMENT ON customer(Column_C_MKTSEGMENT, Column_C_CUSTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_RECEIPTDATE_L_COMMITDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_RECEIPTDATE_L_COMMITDATE",
+    "command": "CREATE INDEX HYP_L_RECEIPTDATE_L_COMMITDATE ON lineitem(Column_L_COMMITDATE, Column_L_RECEIPTDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_R_NAME_R_REGIONKEY",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_R_NAME_R_REGIONKEY",
+    "command": "CREATE INDEX HYP_R_NAME_R_REGIONKEY ON region(Column_R_REGIONKEY, Column_R_NAME)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_ORDERKEY_L_RECEIPTDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_ORDERKEY_L_RECEIPTDATE",
+    "command": "CREATE INDEX HYP_L_ORDERKEY_L_RECEIPTDATE ON lineitem(Column_L_RECEIPTDATE, Column_L_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "indexName": "HYP_L_ORDERKEY_L_SHIPDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_ORDERKEY_L_SHIPDATE",
+    "command": "CREATE INDEX HYP_L_ORDERKEY_L_SHIPDATE ON lineitem(Column_L_SHIPDATE, Column_L_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_RECEIPTDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_L_RECEIPTDATE",
+    "command": "CREATE INDEX HYP_L_RECEIPTDATE ON lineitem(Column_L_RECEIPTDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_R_NAME",
+    "bonus": "1.0",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_R_NAME",
+    "command": "CREATE INDEX HYP_R_NAME ON region(Column_R_NAME)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_8",
+      "DML_TPCH_3"
+    ],
+    "indexName": "HYP_O_CUSTKEY_O_ORDERKEY",
+    "bonus": "0.75",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_O_CUSTKEY_O_ORDERKEY",
+    "command": "CREATE INDEX HYP_O_CUSTKEY_O_ORDERKEY ON orders(Column_O_ORDERKEY, Column_O_CUSTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_L_SUPPKEY",
+    "bonus": "0.4",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_L_SUPPKEY",
+    "command": "CREATE INDEX HYP_L_SUPPKEY ON lineitem(Column_L_SUPPKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4",
+      "DML_TPCH_3",
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_O_ORDERDATE",
+    "bonus": "1.0",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_O_ORDERDATE",
+    "command": "CREATE INDEX HYP_O_ORDERDATE ON orders(Column_O_ORDERDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3",
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_O_CUSTKEY_O_ORDERDATE",
+    "bonus": "0.75",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_O_CUSTKEY_O_ORDERDATE",
+    "command": "CREATE INDEX HYP_O_CUSTKEY_O_ORDERDATE ON orders(Column_O_ORDERDATE, Column_O_CUSTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3",
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_O_ORDERDATE_O_CUSTKEY",
+    "bonus": "0.75",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_O_ORDERDATE_O_CUSTKEY",
+    "command": "CREATE INDEX HYP_O_ORDERDATE_O_CUSTKEY ON orders(Column_O_ORDERDATE, Column_O_CUSTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_S_SUPPKEY_S_NATIONKEY",
+    "bonus": "0.5",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_S_SUPPKEY_S_NATIONKEY",
+    "command": "CREATE INDEX HYP_S_SUPPKEY_S_NATIONKEY ON supplier(Column_S_NATIONKEY, Column_S_SUPPKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_C_CUSTKEY_C_NATIONKEY",
+    "bonus": "0.666666666666666666666666",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_C_CUSTKEY_C_NATIONKEY",
+    "command": "CREATE INDEX HYP_C_CUSTKEY_C_NATIONKEY ON customer(Column_C_CUSTKEY, Column_C_NATIONKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_P_PARTKEY_P_TYPE",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_P_PARTKEY_P_TYPE",
+    "command": "CREATE INDEX HYP_P_PARTKEY_P_TYPE ON part(Column_P_TYPE, Column_P_PARTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_L_PARTKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_L_PARTKEY",
+    "command": "CREATE INDEX HYP_L_PARTKEY ON lineitem(Column_L_PARTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_8",
+      "DML_TPCH_3",
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_O_ORDERKEY_O_ORDERDATE",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_O_ORDERKEY_O_ORDERDATE",
+    "command": "CREATE INDEX HYP_O_ORDERKEY_O_ORDERDATE ON orders(Column_O_ORDERDATE, Column_O_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_P_TYPE_P_PARTKEY",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_P_TYPE_P_PARTKEY",
+    "command": "CREATE INDEX HYP_P_TYPE_P_PARTKEY ON part(Column_P_PARTKEY, Column_P_TYPE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_N_NATIONKEY_N_REGIONKEY",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_N_NATIONKEY_N_REGIONKEY",
+    "command": "CREATE INDEX HYP_N_NATIONKEY_N_REGIONKEY ON nation(Column_N_REGIONKEY, Column_N_NATIONKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "indexName": "HYP_L_SHIPDATE_L_ORDERKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_SHIPDATE_L_ORDERKEY",
+    "command": "CREATE INDEX HYP_L_SHIPDATE_L_ORDERKEY ON lineitem(Column_L_ORDERKEY, Column_L_SHIPDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_RECEIPTDATE_L_ORDERKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_RECEIPTDATE_L_ORDERKEY",
+    "command": "CREATE INDEX HYP_L_RECEIPTDATE_L_ORDERKEY ON lineitem(Column_L_ORDERKEY, Column_L_RECEIPTDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_L_PARTKEY_L_ORDERKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_PARTKEY_L_ORDERKEY",
+    "command": "CREATE INDEX HYP_L_PARTKEY_L_ORDERKEY ON lineitem(Column_L_ORDERKEY, Column_L_PARTKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3",
+      "DML_TPCH_8",
+      "DML_TPCH_4",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_O_ORDERDATE_O_ORDERKEY",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_O_ORDERDATE_O_ORDERKEY",
+    "command": "CREATE INDEX HYP_O_ORDERDATE_O_ORDERKEY ON orders(Column_O_ORDERDATE, Column_O_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_N_REGIONKEY_N_NATIONKEY",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_N_REGIONKEY_N_NATIONKEY",
+    "command": "CREATE INDEX HYP_N_REGIONKEY_N_NATIONKEY ON nation(Column_N_NATIONKEY, Column_N_REGIONKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_R_REGIONKEY_R_NAME",
+    "bonus": "1.0",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_R_REGIONKEY_R_NAME",
+    "command": "CREATE INDEX HYP_R_REGIONKEY_R_NAME ON region(Column_R_REGIONKEY, Column_R_NAME)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "indexName": "HYP_C_MKTSEGMENT_C_CUSTKEY",
+    "bonus": "0.333333333333333333333333",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_C_MKTSEGMENT_C_CUSTKEY",
+    "command": "CREATE INDEX HYP_C_MKTSEGMENT_C_CUSTKEY ON customer(Column_C_CUSTKEY, Column_C_MKTSEGMENT)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_COMMITDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_L_COMMITDATE",
+    "command": "CREATE INDEX HYP_L_COMMITDATE ON lineitem(Column_L_COMMITDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_L_SUPPKEY_L_ORDERKEY",
+    "bonus": "0.4",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_SUPPKEY_L_ORDERKEY",
+    "command": "CREATE INDEX HYP_L_SUPPKEY_L_ORDERKEY ON lineitem(Column_L_SUPPKEY, Column_L_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_3",
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_O_ORDERKEY_O_CUSTKEY",
+    "bonus": "0.75",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_O_ORDERKEY_O_CUSTKEY",
+    "command": "CREATE INDEX HYP_O_ORDERKEY_O_CUSTKEY ON orders(Column_O_CUSTKEY, Column_O_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_COMMITDATE_L_RECEIPTDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_COMMITDATE_L_RECEIPTDATE",
+    "command": "CREATE INDEX HYP_L_COMMITDATE_L_RECEIPTDATE ON lineitem(Column_L_RECEIPTDATE, Column_L_COMMITDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5",
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_L_ORDERKEY_L_SUPPKEY",
+    "bonus": "0.4",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_ORDERKEY_L_SUPPKEY",
+    "command": "CREATE INDEX HYP_L_ORDERKEY_L_SUPPKEY ON lineitem(Column_L_ORDERKEY, Column_L_SUPPKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_ORDERKEY_L_COMMITDATE",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_ORDERKEY_L_COMMITDATE",
+    "command": "CREATE INDEX HYP_L_ORDERKEY_L_COMMITDATE ON lineitem(Column_L_COMMITDATE, Column_L_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "indexName": "HYP_L_ORDERKEY_L_PARTKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_ORDERKEY_L_PARTKEY",
+    "command": "CREATE INDEX HYP_L_ORDERKEY_L_PARTKEY ON lineitem(Column_L_PARTKEY, Column_L_ORDERKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_S_NATIONKEY_S_SUPPKEY",
+    "bonus": "0.5",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_S_NATIONKEY_S_SUPPKEY",
+    "command": "CREATE INDEX HYP_S_NATIONKEY_S_SUPPKEY ON supplier(Column_S_SUPPKEY, Column_S_NATIONKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8",
+      "DML_TPCH_5"
+    ],
+    "indexName": "HYP_C_NATIONKEY_C_CUSTKEY",
+    "bonus": "0.666666666666666666666666",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_C_NATIONKEY_C_CUSTKEY",
+    "command": "CREATE INDEX HYP_C_NATIONKEY_C_CUSTKEY ON customer(Column_C_CUSTKEY, Column_C_NATIONKEY)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "indexName": "HYP_L_COMMITDATE_L_ORDERKEY",
+    "bonus": "0.2",
+    "rule": "RuleHypCompositeIndex",
+    "id": "HYP_L_COMMITDATE_L_ORDERKEY",
+    "command": "CREATE INDEX HYP_L_COMMITDATE_L_ORDERKEY ON lineitem(Column_L_ORDERKEY, Column_L_COMMITDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "indexName": "HYP_C_MKTSEGMENT",
+    "bonus": "0.333333333333333333333333",
+    "rule": "RuleHypSimpleIndex",
+    "id": "HYP_C_MKTSEGMENT",
+    "command": "CREATE INDEX HYP_C_MKTSEGMENT ON customer(Column_C_MKTSEGMENT)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "condition": "WHERE  = 'BUILDING'",
+    "indexName": "PARTIAL_C_MKTSEGMENT_ec940310e2025d61bae1c6ef4d7b3738",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_C_MKTSEGMENT_ec940310e2025d61bae1c6ef4d7b3738",
+    "command": "CREATE INDEX PARTIAL_C_MKTSEGMENT_ec940310e2025d61bae1c6ef4d7b3738 ON customer(Column_C_MKTSEGMENT)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_1"
+    ],
+    "condition": "WHERE  <= DATE'1998-12-01'-INTERVAL'87_DAYS'\r\n",
+    "indexName": "PARTIAL_L_SHIPDATE_a2fcaf3b062a54174ad04afcc8eba314",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_L_SHIPDATE_a2fcaf3b062a54174ad04afcc8eba314",
+    "command": "CREATE INDEX PARTIAL_L_SHIPDATE_a2fcaf3b062a54174ad04afcc8eba314 ON lineitem(Column_L_SHIPDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "condition": "WHERE  BETWEEN DATE '1995-01-01'",
+    "indexName": "PARTIAL_O_ORDERDATE_8fe5882f28bf93082daf980dcb054def",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_O_ORDERDATE_8fe5882f28bf93082daf980dcb054def",
+    "command": "CREATE INDEX PARTIAL_O_ORDERDATE_8fe5882f28bf93082daf980dcb054def ON orders(Column_O_ORDERDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5"
+    ],
+    "condition": "WHERE  < DATE '1994-01-01' + INTERVAL '1' YEAR \r\n",
+    "indexName": "PARTIAL_O_ORDERDATE_d412e551df2b900e5d28bf68b743188b",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_O_ORDERDATE_d412e551df2b900e5d28bf68b743188b",
+    "command": "CREATE INDEX PARTIAL_O_ORDERDATE_d412e551df2b900e5d28bf68b743188b ON orders(Column_O_ORDERDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "condition": "WHERE  = 'ECONOMY ANODIZED STEEL' \r\n",
+    "indexName": "PARTIAL_P_TYPE_2385f3f2d290e643263e483c621b6c09",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_P_TYPE_2385f3f2d290e643263e483c621b6c09",
+    "command": "CREATE INDEX PARTIAL_P_TYPE_2385f3f2d290e643263e483c621b6c09 ON part(Column_P_TYPE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_8"
+    ],
+    "condition": "WHERE  = 'AMERICA'",
+    "indexName": "PARTIAL_R_NAME_5108816bf38bba3a814d3c58562e1c80",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_R_NAME_5108816bf38bba3a814d3c58562e1c80",
+    "command": "CREATE INDEX PARTIAL_R_NAME_5108816bf38bba3a814d3c58562e1c80 ON region(Column_R_NAME)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "condition": "WHERE  < DATE '1995-03-15'",
+    "indexName": "PARTIAL_O_ORDERDATE_6a444fbfe2ef5dee0a8b9b5accf2e8c5",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_O_ORDERDATE_6a444fbfe2ef5dee0a8b9b5accf2e8c5",
+    "command": "CREATE INDEX PARTIAL_O_ORDERDATE_6a444fbfe2ef5dee0a8b9b5accf2e8c5 ON orders(Column_O_ORDERDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5"
+    ],
+    "condition": "WHERE  = 'ASIA'",
+    "indexName": "PARTIAL_R_NAME_3aee8c1b924cf97cdec3023eb7f629f7",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_R_NAME_3aee8c1b924cf97cdec3023eb7f629f7",
+    "command": "CREATE INDEX PARTIAL_R_NAME_3aee8c1b924cf97cdec3023eb7f629f7 ON region(Column_R_NAME)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_3"
+    ],
+    "condition": "WHERE  > DATE '1995-03-15' \r\n",
+    "indexName": "PARTIAL_L_SHIPDATE_a85c7be4a21f487f0188cedaf50f1e6a",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_L_SHIPDATE_a85c7be4a21f487f0188cedaf50f1e6a",
+    "command": "CREATE INDEX PARTIAL_L_SHIPDATE_a85c7be4a21f487f0188cedaf50f1e6a ON lineitem(Column_L_SHIPDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_5"
+    ],
+    "condition": "WHERE  >= DATE '1994-01-01'",
+    "indexName": "PARTIAL_O_ORDERDATE_05e0c9b5d620371ae409d98b1747c9b3",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_O_ORDERDATE_05e0c9b5d620371ae409d98b1747c9b3",
+    "command": "CREATE INDEX PARTIAL_O_ORDERDATE_05e0c9b5d620371ae409d98b1747c9b3 ON orders(Column_O_ORDERDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "condition": "WHERE  < DATE '1993-07-01' + INTERVAL '3' MONTH",
+    "indexName": "PARTIAL_O_ORDERDATE_f0e4489e667d638b9719d69404779e3c",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_O_ORDERDATE_f0e4489e667d638b9719d69404779e3c",
+    "command": "CREATE INDEX PARTIAL_O_ORDERDATE_f0e4489e667d638b9719d69404779e3c ON orders(Column_O_ORDERDATE)"
+  },
+  {
+    "sqls": [
+      "DML_TPCH_4"
+    ],
+    "condition": "WHERE  >= DATE '1993-07-01'",
+    "indexName": "PARTIAL_O_ORDERDATE_5ed359b830f647fe43352c7d37a017c1",
+    "rule": "RuleSimplePartialIndex",
+    "id": "PARTIAL_O_ORDERDATE_5ed359b830f647fe43352c7d37a017c1",
+    "command": "CREATE INDEX PARTIAL_O_ORDERDATE_5ed359b830f647fe43352c7d37a017c1 ON orders(Column_O_ORDERDATE)"
+  }
+]

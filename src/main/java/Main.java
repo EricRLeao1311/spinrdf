@@ -40,14 +40,14 @@ public class Main {
         SPINModuleRegistry.get().init();
 
         // Load RDF without load
-        InputStream file = FileManager.get().open("src/main/java/input_output/OnDBTuning_com_regra_e_sem_carga.rdf");
+        InputStream file = FileManager.get().open("src/main/java/input_output/OnDBTuning_com_regra_e_carga1(Eric).rdf");
         Model baseModel = ModelFactory.createDefaultModel();
         baseModel.read(file, null);
 
         // Load JSON schema and queries
         JsonObject jsonSchema = null;
         try {
-            FileReader reader = new FileReader("src/main/java/input_output/schema_and_queries_2.json");
+            FileReader reader = new FileReader("src/main/java/input_output/schema_and_queries.json");
             jsonSchema = JsonParser.parseReader(reader).getAsJsonObject();
             reader.close();
         } catch (FileNotFoundException e) {
@@ -100,15 +100,15 @@ public class Main {
             // Format the query to include carriage returns (&#xD;)
             String formattedQuery = query.replace("\n", "&#xD;\n");
 
-            // Create the DMLStatement resource
-            Resource dmlResource = ontModel.createResource("#" + dmlId, ontModel.createResource("http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DMLStatement"));
-            
-            // Add the formatted query description
+            // Cria o recurso do DMLStatement diretamente com o tipo principal 'DMLStatement'
+            Resource dmlResource = ontModel.createResource("#" + dmlId, ontModel.createResource("http://www.semanticweb.org/ana/ontologies/2016/4/tuning#QueryStatement"));
+
+            // Adiciona a propriedade hasDMLDescription
             dmlResource.addProperty(ontModel.createProperty("http://www.semanticweb.org/ana/ontologies/2016/4/tuning#hasDMLDescription"), formattedQuery);
-            
-            // Add the necessary types
-            dmlResource.addProperty(ontModel.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), ontModel.createResource("http://www.semanticweb.org/ana/ontologies/2016/4/tuning#QueryStatement"));
-            dmlResource.addProperty(ontModel.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), ontModel.createResource("http://www.w3.org/2002/07/owl#NamedIndividual"));
+
+            // Adiciona o tipo secundário (opcional) como QueryStatement
+            dmlResource.addProperty(ontModel.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), ontModel.createResource("http://www.semanticweb.org/ana/ontologies/2016/4/tuning#DMLStatement"));
+
         }
 
         
