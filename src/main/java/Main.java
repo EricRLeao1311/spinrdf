@@ -2,6 +2,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import com.sun.net.httpserver.HttpServer;
+import java.net.InetSocketAddress;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -9,7 +12,19 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 
 public class Main {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+
+        server.createContext("/api", new API());
+        server.setExecutor(null);
+        server.start();
+        System.out.println("Server started on port 8000");
+        
+    }
+
+
+    public static void oldMain(String[] args) {
         // Load JSON schema and queries
         JsonObject jsonSchema = null;
         try {
